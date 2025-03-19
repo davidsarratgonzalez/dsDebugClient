@@ -8,9 +8,7 @@
 ds.debug.get <- function(object, conns = NULL) {
   datashield.aggregate(
     conns,
-    paste0("debugGetDS(", object, ")"),
-    async = FALSE,
-    return_errors = TRUE
+    paste0("debugGetDS(", object, ")")
   )
 }
 
@@ -27,9 +25,7 @@ ds.debug.get <- function(object, conns = NULL) {
 ds.debug.head <- function(object, n = 6, conns = NULL) {
   datashield.aggregate(
     conns,
-    paste0("debugHeadDS(", object, ", ", n, ")"),
-    async = FALSE,
-    return_errors = TRUE
+    paste0("debugHeadDS(", object, ", ", n, ")")
   )
 }
 
@@ -45,8 +41,6 @@ ds.debug.head <- function(object, n = 6, conns = NULL) {
 ds.debug.tail <- function(object, n = 6, conns = NULL) {
   datashield.aggregate(
     conns,
-    paste0("debugTailDS(", object, ", ", n, ")"),
-    async = FALSE,
-    return_errors = TRUE
+    paste0("debugTailDS(", object, ", ", n, ")")
   )
 }
